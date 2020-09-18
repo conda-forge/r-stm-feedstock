@@ -1,4 +1,4 @@
-{% set version = "1.3.5" %}
+{% set version = "1.3.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/stm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/stm/stm_{{ version }}.tar.gz
-  sha256: 96192d46bad5f5d8ffb13b56dac2b95eefcb2fb40d7e64b007d81b86bbeacefb
+  sha256: 0be6b79034fd711d44a56339360d818fedacce4459146440932e5961a3259863
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   skip: true  # [win]
   rpaths:
     - lib/R/lib/
@@ -67,14 +67,11 @@ test:
 about:
   home: http://structuraltopicmodel.com
   license: MIT
-  summary: The Structural Topic Model (STM) allows researchers to estimate topic models with
-    document-level covariates. The package also includes tools for model selection,
-    visualization, and estimation of topic-covariate regressions. Methods developed
-    in Roberts et al (2014) <doi:10.1111/ajps.12103> and Roberts et al (2016) <doi:10.1080/01621459.2016.1141684>.
-    Vignette is Roberts et al (2019) <doi:10.18637/jss.v091.i02>.
+  summary: The Structural Topic Model (STM) allows researchers to estimate topic models with document-level covariates. The package also includes tools for model selection, visualization, and estimation of topic-covariate regressions. Methods developed in Roberts et al (2014) <doi:10.1111/ajps.12103> and Roberts et al (2016)
+    <doi:10.1080/01621459.2016.1141684>. Vignette is Roberts et al (2019) <doi:10.18637/jss.v091.i02>.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
