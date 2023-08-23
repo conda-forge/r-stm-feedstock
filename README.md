@@ -3,6 +3,7 @@ About r-stm-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-stm-feedstock/blob/main/LICENSE.txt)
 
+
 About r-stm
 -----------
 
@@ -11,6 +12,7 @@ Home: http://structuraltopicmodel.com
 Package license: MIT
 
 Summary: The Structural Topic Model (STM) allows researchers to estimate topic models with document-level covariates. The package also includes tools for model selection, visualization, and estimation of topic-covariate regressions. Methods developed in Roberts et al (2014) <doi:10.1111/ajps.12103> and Roberts et al (2016) <doi:10.1080/01621459.2016.1141684>. Vignette is Roberts et al (2019) <doi:10.18637/jss.v091.i02>.
+
 About r-stm
 -----------
 
